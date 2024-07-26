@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<projectConfiguration>
+    <configVersion>2</configVersion>
+    <relativeTo>WORKSPACE</relativeTo>
+    <referencedLibrary type="PYTHON" name="readDataFromFiles" path="LOTR-Automation/CustomLibs/readDataFromFiles.py" dynamic="false"/>
+    <referencedLibrary type="PYTHON" name="SeleniumLibrary" path="C:/Users/shubhadac/AppData/Local/Programs/Python/Python38/Lib/site-packages/SeleniumLibrary/__init__.py" dynamic="false"/>
+    <referencedLibrary type="PYTHON" name="AutoItLibrary" path="C:/Users/shubhadac/AppData/Local/Programs/Python/Python38/Lib/site-packages/AutoItLibrary/__init__.py" dynamic="false"/>
+    <referencedLibrary type="PYTHON" name="pyautogui" path="C:/Users/shubhadac/AppData/Local/Programs/Python/Python38/Lib/site-packages/pyautogui/__init__.py" dynamic="false"/>
+    <referencedLibrary type="PYTHON" name="RequestsLibrary" path="C:/Users/shubhadac/AppData/Local/Programs/Python/Python38/Lib/site-packages/RequestsLibrary" dynamic="false"/>
+    <referencedLibrary type="PYTHON" name="JSONLibrary" path="C:/Users/shubhadac/AppData/Local/Programs/Python/Python38/Lib/site-packages/JSONLibrary/__init__.py" dynamic="false"/>
+    <referencedLibrary type="PYTHON" name="REST" path="C:/Users/shubhadac/AppData/Local/Programs/Python/Python38/Lib/site-packages/REST/__init__.py" dynamic="false"/>
+    <referencedLibrary type="PYTHON" name="CertificateRequests" path="LOTR-Automation/APIAutomation/Test Source/NxGenTier3/Resource/TD_Core/Scripts/CertificateRequests.py" dynamic="false"/>
+    <referencedLibrary type="PYTHON" name="DriverManager" path="LOTR-Automation/APIAutomation/Test Source/NxGenTier3/Resource/Core/Scripts/DriverManager.py" dynamic="false"/>
+    <referencedLibrary type="PYTHON" name="EmailWrapper" path="LOTR-Automation/APIAutomation/Test Source/NxGenTier3/Resource/Core/Scripts/EmailWrapper.py" dynamic="false"/>
+    <referencedLibrary type="PYTHON" name="FileRequests" path="LOTR-Automation/APIAutomation/Test Source/NxGenTier3/Resource/TD_Core/Scripts/FileRequests.py" dynamic="false"/>
+    <referencedLibrary type="PYTHON" name="InitAutomation" path="LOTR-Automation/APIAutomation/Test Source/NxGenTier3/Resource/Core/Scripts/InitAutomation.py" dynamic="false"/>
+    <referencedLibrary type="PYTHON" name="PDFPlumberPy3" path="LOTR-Automation/APIAutomation/Test Source/NxGenTier3/Resource/Core/Scripts/PDFPlumberPy3.py" dynamic="false"/>
+    <referencedLibrary type="PYTHON" name="PDFTextLib" path="LOTR-Automation/APIAutomation/Test Source/NxGenTier3/Resource/Core/Scripts/PDFTextLib.py" dynamic="false"/>
+    <referencedLibrary type="PYTHON" name="RobotLogging" path="LOTR-Automation/APIAutomation/Test Source/NxGenTier3/Resource/Core/Scripts/RobotLogging.py" dynamic="false"/>
+    <referencedLibrary type="PYTHON" name="TD3Wrapper" path="LOTR-Automation/APIAutomation/Test Source/NxGenTier3/Resource/TD3_Core/Scripts/TD3Wrapper.py" dynamic="false"/>
+    <referencedLibrary type="PYTHON" name="Unzip" path="LOTR-Automation/APIAutomation/Test Source/NxGenTier3/Resource/Core/Scripts/Unzip.py" dynamic="false"/>
+    <referencedLibrary type="PYTHON" name="Utility" path="LOTR-Automation/APIAutomation/Test Source/NxGenTier3/Resource/Core/Scripts/Utility.py" dynamic="false"/>
+    <referencedLibrary type="PYTHON" name="HttpLibrary" path="C:/Users/shubhadac/AppData/Local/Programs/Python/Python38/Lib/site-packages/HttpLibrary" dynamic="false"/>
+    <pythonpath/>
+    <classpath/>
+    <excludedForValidation/>
+    <isValidatedFileSizeCheckingEnabled>true</isValidatedFileSizeCheckingEnabled>
+    <validatedFileMaxSize>1024</validatedFileMaxSize>
+</projectConfiguration>

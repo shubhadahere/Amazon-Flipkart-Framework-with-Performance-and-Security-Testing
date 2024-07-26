@@ -1,0 +1,837 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 3.1.1 (Python 3.8.0 on win32)" generated="20240726 20:30:01.404" rpa="false">
+<suite id="s1" name="Amazon-Flipkart-Automation" source="E:\Prac\eclipse-workspace\Amazon-Flipkart-Automation">
+<suite id="s1-s1" name="TestSuites" source="E:\Prac\eclipse-workspace\Amazon-Flipkart-Automation\TestSuites">
+<suite id="s1-s1-s1" name="Validate Pricing Of Amazon And Flipkart For Titan Watch" source="E:\Prac\eclipse-workspace\Amazon-Flipkart-Automation\TestSuites\Validate Pricing Of Amazon And Flipkart For Titan Watch.robot">
+<kw name="Open Browser To LoginPage" library="Login_Page" type="setup">
+<arguments>
+<arg>${Amazon_URL}</arg>
+</arguments>
+<kw name="Open Browser" library="SeleniumLibrary">
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<arguments>
+<arg>${WEBSITE_URL}</arg>
+<arg>${BROWSER}</arg>
+</arguments>
+<msg timestamp="20240726 20:30:04.991" level="INFO">Opening browser 'chrome' to base url 'https://www.amazon.in/'.</msg>
+<status status="PASS" starttime="20240726 20:30:04.990" endtime="20240726 20:30:21.090"></status>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20240726 20:30:21.091" endtime="20240726 20:30:21.288"></status>
+</kw>
+<status status="PASS" starttime="20240726 20:30:04.989" endtime="20240726 20:30:21.288"></status>
+</kw>
+<test id="s1-s1-s1-t1" name="Validate Pricing Of Amazon And Flipkart For Titan Watch">
+<kw name="Wait And Input Text" library="CommonFunctions">
+<doc>Waits for given locator for default time and then Type value in it.</doc>
+<arguments>
+<arg>${AMAZON_SEARCH_LOC}</arg>
+<arg>${Choice_Of_Product}</arg>
+</arguments>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<doc>Waits until the element ``locator`` is visible.</doc>
+<arguments>
+<arg>${locator}</arg>
+</arguments>
+<status status="PASS" starttime="20240726 20:30:21.290" endtime="20240726 20:30:21.364"></status>
+</kw>
+<kw name="Clear Element Text" library="SeleniumLibrary">
+<doc>Clears the value of the text-input-element identified by ``locator``.</doc>
+<arguments>
+<arg>${Locator}</arg>
+</arguments>
+<status status="PASS" starttime="20240726 20:30:21.365" endtime="20240726 20:30:21.469"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>${locator}</arg>
+<arg>${Text to input}</arg>
+</arguments>
+<msg timestamp="20240726 20:30:21.470" level="INFO">Typing text 'TITAN' into text field 'twotabsearchtextbox'.</msg>
+<status status="PASS" starttime="20240726 20:30:21.470" endtime="20240726 20:30:21.602"></status>
+</kw>
+<status status="PASS" starttime="20240726 20:30:21.289" endtime="20240726 20:30:21.603"></status>
+</kw>
+<kw name="Wait And Click" library="CommonFunctions">
+<doc>Waits for given locator for default time and then click it.</doc>
+<arguments>
+<arg>${AMAZON_CLICK_SEARCH_ICON_LOC}</arg>
+</arguments>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<doc>Waits until the element ``locator`` is visible.</doc>
+<arguments>
+<arg>${locator}</arg>
+</arguments>
+<status status="PASS" starttime="20240726 20:30:21.603" endtime="20240726 20:30:21.652"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>${locator}</arg>
+</arguments>
+<msg timestamp="20240726 20:30:21.653" level="INFO">Clicking element 'nav-search-submit-button'.</msg>
+<status status="PASS" starttime="20240726 20:30:21.653" endtime="20240726 20:30:24.572"></status>
+</kw>
+<status status="PASS" starttime="20240726 20:30:21.603" endtime="20240726 20:30:24.572"></status>
+</kw>
+<kw name="Get Loc To Click On Element" library="Amazon_Product_Info_Page">
+<arguments>
+<arg>${Choice_Of_Product}</arg>
+</arguments>
+<assign>
+<var>${Product_Loc}</var>
+</assign>
+<kw name="Return From Keyword" library="BuiltIn">
+<doc>Returns from the enclosing user keyword.</doc>
+<arguments>
+<arg>//div[@class='a-section a-spacing-base a-text-center']/div[2]/div[1]/div[2]/h2/span['${Product}']/ancestor::div[2]/h2</arg>
+</arguments>
+<msg timestamp="20240726 20:30:24.576" level="INFO">Returning from the enclosing user keyword.</msg>
+<status status="PASS" starttime="20240726 20:30:24.574" endtime="20240726 20:30:24.576"></status>
+</kw>
+<msg timestamp="20240726 20:30:24.577" level="INFO">${Product_Loc} = //div[@class='a-section a-spacing-base a-text-center']/div[2]/div[1]/div[2]/h2/span['TITAN']/ancestor::div[2]/h2</msg>
+<status status="PASS" starttime="20240726 20:30:24.573" endtime="20240726 20:30:24.577"></status>
+</kw>
+<kw name="Wait And Click" library="CommonFunctions">
+<doc>Waits for given locator for default time and then click it.</doc>
+<arguments>
+<arg>${FIRST_PRODUCT_LOC}</arg>
+</arguments>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<doc>Waits until the element ``locator`` is visible.</doc>
+<arguments>
+<arg>${locator}</arg>
+</arguments>
+<status status="PASS" starttime="20240726 20:30:24.578" endtime="20240726 20:30:24.622"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>${locator}</arg>
+</arguments>
+<msg timestamp="20240726 20:30:24.622" level="INFO">Clicking element '//*[@id="search"]/div[1]/div[1]/div/span[1]/div[1]/div[3]/div/div/div/div/span/div/div/div[1]/div/span/a/div/img'.</msg>
+<status status="PASS" starttime="20240726 20:30:24.622" endtime="20240726 20:30:24.949"></status>
+</kw>
+<status status="PASS" starttime="20240726 20:30:24.577" endtime="20240726 20:30:24.950"></status>
+</kw>
+<kw name="Wait Until Page Contains" library="SeleniumLibrary">
+<doc>Waits until ``text`` appears on the current page.</doc>
+<arguments>
+<arg>${Choice_Of_Product}</arg>
+</arguments>
+<status status="PASS" starttime="20240726 20:30:24.950" endtime="20240726 20:30:25.063"></status>
+</kw>
+<kw name="Switch Windows Option" library="CommonFunctions">
+<arguments>
+<arg>1</arg>
+</arguments>
+<kw name="Get Window Handles" library="SeleniumLibrary">
+<doc>Returns all child window handles of the selected browser as a list.</doc>
+<assign>
+<var>${WindowList}</var>
+</assign>
+<msg timestamp="20240726 20:30:25.066" level="INFO">${WindowList} = ['CDwindow-1E4F4EE0E7F0B67828A0ADBE078BBBD5', 'CDwindow-B21396804DA8A99D9C4FC3F1B6B37D0E']</msg>
+<status status="PASS" starttime="20240726 20:30:25.064" endtime="20240726 20:30:25.066"></status>
+</kw>
+<kw name="Switch Window" library="SeleniumLibrary">
+<doc>Switches to browser window matching ``locator``.</doc>
+<arguments>
+<arg>${WindowList[${WindowCount}]}</arg>
+</arguments>
+<status status="PASS" starttime="20240726 20:30:25.067" endtime="20240726 20:30:25.289"></status>
+</kw>
+<kw name="Get Title" library="SeleniumLibrary">
+<doc>Returns the title of the current page.</doc>
+<assign>
+<var>${title}</var>
+</assign>
+<msg timestamp="20240726 20:30:31.063" level="INFO">${title} = Titan Leather Analog Green Dial Men's Watch-1874Nl01, Band Color-Black : Amazon.in: Watches</msg>
+<status status="PASS" starttime="20240726 20:30:25.290" endtime="20240726 20:30:31.063"></status>
+</kw>
+<kw name="Log" library="BuiltIn">
+<doc>Logs the given message with the given level.</doc>
+<arguments>
+<arg>Title in New Tab: ${title}</arg>
+</arguments>
+<msg timestamp="20240726 20:30:31.064" level="INFO">Title in New Tab: Titan Leather Analog Green Dial Men's Watch-1874Nl01, Band Color-Black : Amazon.in: Watches</msg>
+<status status="PASS" starttime="20240726 20:30:31.064" endtime="20240726 20:30:31.064"></status>
+</kw>
+<status status="PASS" starttime="20240726 20:30:25.063" endtime="20240726 20:30:31.064"></status>
+</kw>
+<kw name="Get The Product Price" library="Amazon_Selected_Product_Info_Page">
+<assign>
+<var>${Amazon_Product_Price}</var>
+</assign>
+<kw name="Get Text" library="SeleniumLibrary">
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<arguments>
+<arg>${PRODUCT_PRICE}</arg>
+</arguments>
+<assign>
+<var>${Price_Of_Product}</var>
+</assign>
+<msg timestamp="20240726 20:30:31.092" level="INFO">${Price_Of_Product} = 9,995</msg>
+<status status="PASS" starttime="20240726 20:30:31.065" endtime="20240726 20:30:31.092"></status>
+</kw>
+<kw name="Replace String" library="String">
+<doc>Replaces ``search_for`` in the given ``string`` with ``replace_with``.</doc>
+<arguments>
+<arg>${Price_Of_Product}</arg>
+<arg>,</arg>
+<arg>${EMPTY}</arg>
+</arguments>
+<assign>
+<var>${Price_Of_Product}</var>
+</assign>
+<msg timestamp="20240726 20:30:31.093" level="INFO">${Price_Of_Product} = 9995</msg>
+<status status="PASS" starttime="20240726 20:30:31.093" endtime="20240726 20:30:31.093"></status>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<doc>Logs the given message to the console.</doc>
+<arguments>
+<arg>Price Of Prod: ${Price_Of_Product}</arg>
+</arguments>
+<status status="PASS" starttime="20240726 20:30:31.093" endtime="20240726 20:30:31.094"></status>
+</kw>
+<kw name="Return From Keyword" library="BuiltIn">
+<doc>Returns from the enclosing user keyword.</doc>
+<arguments>
+<arg>${Price_Of_Product}</arg>
+</arguments>
+<msg timestamp="20240726 20:30:31.094" level="INFO">Returning from the enclosing user keyword.</msg>
+<status status="PASS" starttime="20240726 20:30:31.094" endtime="20240726 20:30:31.094"></status>
+</kw>
+<msg timestamp="20240726 20:30:31.094" level="INFO">${Amazon_Product_Price} = 9995</msg>
+<status status="PASS" starttime="20240726 20:30:31.065" endtime="20240726 20:30:31.095"></status>
+</kw>
+<kw name="Close All Browsers" library="SeleniumLibrary">
+<doc>Closes all open browsers and resets the browser cache.</doc>
+<status status="PASS" starttime="20240726 20:30:31.095" endtime="20240726 20:30:33.425"></status>
+</kw>
+<kw name="Open Browser To LoginPage" library="Login_Page">
+<arguments>
+<arg>${Flipkart_URL}</arg>
+</arguments>
+<kw name="Open Browser" library="SeleniumLibrary">
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<arguments>
+<arg>${WEBSITE_URL}</arg>
+<arg>${BROWSER}</arg>
+</arguments>
+<msg timestamp="20240726 20:30:33.425" level="INFO">Opening browser 'chrome' to base url 'https://www.flipkart.com/'.</msg>
+<status status="PASS" starttime="20240726 20:30:33.425" endtime="20240726 20:30:41.458"></status>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20240726 20:30:41.459" endtime="20240726 20:30:41.672"></status>
+</kw>
+<status status="PASS" starttime="20240726 20:30:33.425" endtime="20240726 20:30:41.673"></status>
+</kw>
+<kw name="Wait And Input Text" library="CommonFunctions">
+<doc>Waits for given locator for default time and then Type value in it.</doc>
+<arguments>
+<arg>${FLIPKART_SEARCH_LOC}</arg>
+<arg>${Choice_Of_Product}</arg>
+</arguments>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<doc>Waits until the element ``locator`` is visible.</doc>
+<arguments>
+<arg>${locator}</arg>
+</arguments>
+<status status="PASS" starttime="20240726 20:30:41.676" endtime="20240726 20:30:41.729"></status>
+</kw>
+<kw name="Clear Element Text" library="SeleniumLibrary">
+<doc>Clears the value of the text-input-element identified by ``locator``.</doc>
+<arguments>
+<arg>${Locator}</arg>
+</arguments>
+<status status="PASS" starttime="20240726 20:30:41.729" endtime="20240726 20:30:41.771"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>${locator}</arg>
+<arg>${Text to input}</arg>
+</arguments>
+<msg timestamp="20240726 20:30:41.771" level="INFO">Typing text 'TITAN' into text field '//input[@class='Pke_EE']'.</msg>
+<status status="PASS" starttime="20240726 20:30:41.771" endtime="20240726 20:30:41.848"></status>
+</kw>
+<status status="PASS" starttime="20240726 20:30:41.674" endtime="20240726 20:30:41.848"></status>
+</kw>
+<kw name="Wait And Click" library="CommonFunctions">
+<doc>Waits for given locator for default time and then click it.</doc>
+<arguments>
+<arg>${FLIPKART_CLICK_SEARCH_ICON_LOC}</arg>
+</arguments>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<doc>Waits until the element ``locator`` is visible.</doc>
+<arguments>
+<arg>${locator}</arg>
+</arguments>
+<status status="PASS" starttime="20240726 20:30:41.849" endtime="20240726 20:30:41.875"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>${locator}</arg>
+</arguments>
+<msg timestamp="20240726 20:30:41.876" level="INFO">Clicking element '(//*[@id="container"]/div/div[1]//div/button)[1]'.</msg>
+<status status="PASS" starttime="20240726 20:30:41.875" endtime="20240726 20:30:47.347"></status>
+</kw>
+<status status="PASS" starttime="20240726 20:30:41.849" endtime="20240726 20:30:47.347"></status>
+</kw>
+<kw name="Click On First Element Of FK" library="Flipkart_Product_Info_Page">
+<kw name="Wait And Click" library="CommonFunctions">
+<doc>Waits for given locator for default time and then click it.</doc>
+<arguments>
+<arg>(${FLIKART_FIRST_PRODUCT_LOC} )[1]</arg>
+</arguments>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<doc>Waits until the element ``locator`` is visible.</doc>
+<arguments>
+<arg>${locator}</arg>
+</arguments>
+<status status="PASS" starttime="20240726 20:30:47.349" endtime="20240726 20:30:47.408"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>${locator}</arg>
+</arguments>
+<msg timestamp="20240726 20:30:47.409" level="INFO">Clicking element '(//img[@class='_53J4C-'] )[1]'.</msg>
+<status status="PASS" starttime="20240726 20:30:47.408" endtime="20240726 20:30:47.521"></status>
+</kw>
+<status status="PASS" starttime="20240726 20:30:47.348" endtime="20240726 20:30:47.522"></status>
+</kw>
+<status status="PASS" starttime="20240726 20:30:47.348" endtime="20240726 20:30:47.522"></status>
+</kw>
+<kw name="Switch Windows Option" library="CommonFunctions">
+<arguments>
+<arg>1</arg>
+</arguments>
+<kw name="Get Window Handles" library="SeleniumLibrary">
+<doc>Returns all child window handles of the selected browser as a list.</doc>
+<assign>
+<var>${WindowList}</var>
+</assign>
+<msg timestamp="20240726 20:30:47.528" level="INFO">${WindowList} = ['CDwindow-4F1705CAE095E268D8C5898EACBE38B7', 'CDwindow-B1836D6A0F72E2750D23F6D4D4BC1132']</msg>
+<status status="PASS" starttime="20240726 20:30:47.525" endtime="20240726 20:30:47.528"></status>
+</kw>
+<kw name="Switch Window" library="SeleniumLibrary">
+<doc>Switches to browser window matching ``locator``.</doc>
+<arguments>
+<arg>${WindowList[${WindowCount}]}</arg>
+</arguments>
+<status status="PASS" starttime="20240726 20:30:47.528" endtime="20240726 20:30:47.587"></status>
+</kw>
+<kw name="Get Title" library="SeleniumLibrary">
+<doc>Returns the title of the current page.</doc>
+<assign>
+<var>${title}</var>
+</assign>
+<msg timestamp="20240726 20:30:51.065" level="INFO">${title} = Titan NQ95118WM02 Raga Facets Analog Watch - For Women - Buy Titan NQ95118WM02 Raga Facets Analog Watch - For Women NQ95118WM02 Online at Best Prices in India | Flipkart.com</msg>
+<status status="PASS" starttime="20240726 20:30:47.587" endtime="20240726 20:30:51.065"></status>
+</kw>
+<kw name="Log" library="BuiltIn">
+<doc>Logs the given message with the given level.</doc>
+<arguments>
+<arg>Title in New Tab: ${title}</arg>
+</arguments>
+<msg timestamp="20240726 20:30:51.066" level="INFO">Title in New Tab: Titan NQ95118WM02 Raga Facets Analog Watch - For Women - Buy Titan NQ95118WM02 Raga Facets Analog Watch - For Women NQ95118WM02 Online at Best Prices in India | Flipkart.com</msg>
+<status status="PASS" starttime="20240726 20:30:51.066" endtime="20240726 20:30:51.067"></status>
+</kw>
+<status status="PASS" starttime="20240726 20:30:47.523" endtime="20240726 20:30:51.067"></status>
+</kw>
+<kw name="Get The Product Price FK" library="Flipkart_Selected_Product_Info_Page">
+<assign>
+<var>${Flipkart_Product_Price}</var>
+</assign>
+<kw name="Get Text" library="SeleniumLibrary">
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<arguments>
+<arg>${PRODUCT_PRICE_FK}</arg>
+</arguments>
+<assign>
+<var>${Price_Of_Product}</var>
+</assign>
+<msg timestamp="20240726 20:30:51.095" level="INFO">${Price_Of_Product} = ₹18,995</msg>
+<status status="PASS" starttime="20240726 20:30:51.068" endtime="20240726 20:30:51.096"></status>
+</kw>
+<kw name="Replace String" library="String">
+<doc>Replaces ``search_for`` in the given ``string`` with ``replace_with``.</doc>
+<arguments>
+<arg>${Price_Of_Product}</arg>
+<arg>₹</arg>
+<arg>${EMPTY}</arg>
+</arguments>
+<assign>
+<var>${Price_Of_Product}</var>
+</assign>
+<msg timestamp="20240726 20:30:51.096" level="INFO">${Price_Of_Product} = 18,995</msg>
+<status status="PASS" starttime="20240726 20:30:51.096" endtime="20240726 20:30:51.096"></status>
+</kw>
+<kw name="Replace String" library="String">
+<doc>Replaces ``search_for`` in the given ``string`` with ``replace_with``.</doc>
+<arguments>
+<arg>${Price_Of_Product}</arg>
+<arg>,</arg>
+<arg>${EMPTY}</arg>
+</arguments>
+<assign>
+<var>${Price_Of_Product}</var>
+</assign>
+<msg timestamp="20240726 20:30:51.097" level="INFO">${Price_Of_Product} = 18995</msg>
+<status status="PASS" starttime="20240726 20:30:51.097" endtime="20240726 20:30:51.097"></status>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<doc>Logs the given message to the console.</doc>
+<arguments>
+<arg>Price Of Prod: ${Price_Of_Product}</arg>
+</arguments>
+<status status="PASS" starttime="20240726 20:30:51.097" endtime="20240726 20:30:51.098"></status>
+</kw>
+<kw name="Return From Keyword" library="BuiltIn">
+<doc>Returns from the enclosing user keyword.</doc>
+<arguments>
+<arg>${Price_Of_Product}</arg>
+</arguments>
+<msg timestamp="20240726 20:30:51.098" level="INFO">Returning from the enclosing user keyword.</msg>
+<status status="PASS" starttime="20240726 20:30:51.098" endtime="20240726 20:30:51.098"></status>
+</kw>
+<msg timestamp="20240726 20:30:51.098" level="INFO">${Flipkart_Product_Price} = 18995</msg>
+<status status="PASS" starttime="20240726 20:30:51.067" endtime="20240726 20:30:51.098"></status>
+</kw>
+<kw name="Close All Browsers" library="SeleniumLibrary">
+<doc>Closes all open browsers and resets the browser cache.</doc>
+<status status="PASS" starttime="20240726 20:30:51.099" endtime="20240726 20:30:53.401"></status>
+</kw>
+<kw name="Compare Price Of Both Products" library="Amazon_Flipkart_Comparision">
+<arguments>
+<arg>${Amazon_Product_Price}</arg>
+<arg>${Flipkart_Product_Price}</arg>
+</arguments>
+<assign>
+<var>${Higher_Priced_Product}</var>
+</assign>
+<kw name="Convert To Integer" library="BuiltIn">
+<doc>Converts the given item to an integer number.</doc>
+<arguments>
+<arg>${Amazon_Price}</arg>
+</arguments>
+<assign>
+<var>${Amazon_Price}</var>
+</assign>
+<msg timestamp="20240726 20:30:53.401" level="INFO">${Amazon_Price} = 9995</msg>
+<status status="PASS" starttime="20240726 20:30:53.401" endtime="20240726 20:30:53.401"></status>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<doc>Logs the given message to the console.</doc>
+<arguments>
+<arg>${Amazon_Price}</arg>
+</arguments>
+<status status="PASS" starttime="20240726 20:30:53.401" endtime="20240726 20:30:53.401"></status>
+</kw>
+<kw name="Convert To Integer" library="BuiltIn">
+<doc>Converts the given item to an integer number.</doc>
+<arguments>
+<arg>${Flipkart_Price}</arg>
+</arguments>
+<assign>
+<var>${Flipkart_Price}</var>
+</assign>
+<msg timestamp="20240726 20:30:53.401" level="INFO">${Flipkart_Price} = 18995</msg>
+<status status="PASS" starttime="20240726 20:30:53.401" endtime="20240726 20:30:53.401"></status>
+</kw>
+<kw name="Run Keyword If" library="BuiltIn">
+<doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
+<arguments>
+<arg>${Amazon_Price} &gt; ${Flipkart_Price}</arg>
+<arg>Return From Keyword</arg>
+<arg>Amazon</arg>
+</arguments>
+<status status="PASS" starttime="20240726 20:30:53.401" endtime="20240726 20:30:53.401"></status>
+</kw>
+<kw name="Run Keyword If" library="BuiltIn">
+<doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
+<arguments>
+<arg>${Amazon_Price} &lt; ${Flipkart_Price}</arg>
+<arg>Return From Keyword</arg>
+<arg>Flipkart</arg>
+</arguments>
+<kw name="Return From Keyword" library="BuiltIn">
+<doc>Returns from the enclosing user keyword.</doc>
+<arguments>
+<arg>Flipkart</arg>
+</arguments>
+<msg timestamp="20240726 20:30:53.406" level="INFO">Returning from the enclosing user keyword.</msg>
+<status status="PASS" starttime="20240726 20:30:53.406" endtime="20240726 20:30:53.406"></status>
+</kw>
+<status status="PASS" starttime="20240726 20:30:53.401" endtime="20240726 20:30:53.406"></status>
+</kw>
+<msg timestamp="20240726 20:30:53.406" level="INFO">${Higher_Priced_Product} = Flipkart</msg>
+<status status="PASS" starttime="20240726 20:30:53.401" endtime="20240726 20:30:53.406"></status>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<doc>Logs the given message to the console.</doc>
+<arguments>
+<arg>${Higher_Priced_Product}</arg>
+</arguments>
+<status status="PASS" starttime="20240726 20:30:53.406" endtime="20240726 20:30:53.406"></status>
+</kw>
+<kw name="Run Keyword If" library="BuiltIn">
+<doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
+<arguments>
+<arg>'${Higher_Priced_Product}'=='Amazon'</arg>
+<arg>Open Browser To LoginPage</arg>
+<arg>${Flipkart_URL}</arg>
+</arguments>
+<status status="PASS" starttime="20240726 20:30:53.406" endtime="20240726 20:30:53.406"></status>
+</kw>
+<kw name="Run Keyword If" library="BuiltIn">
+<doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
+<arguments>
+<arg>'${Higher_Priced_Product}'=='Amazon'</arg>
+<arg>Wait And Input Text</arg>
+<arg>${FLIPKART_SEARCH_LOC}</arg>
+<arg>${Choice_Of_Product}</arg>
+</arguments>
+<status status="PASS" starttime="20240726 20:30:53.406" endtime="20240726 20:30:53.406"></status>
+</kw>
+<kw name="Run Keyword If" library="BuiltIn">
+<doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
+<arguments>
+<arg>'${Higher_Priced_Product}'=='Amazon'</arg>
+<arg>Wait And Click</arg>
+<arg>${FLIPKART_CLICK_SEARCH_ICON_LOC}</arg>
+</arguments>
+<status status="PASS" starttime="20240726 20:30:53.406" endtime="20240726 20:30:53.406"></status>
+</kw>
+<kw name="Run Keyword If" library="BuiltIn">
+<doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
+<arguments>
+<arg>'${Higher_Priced_Product}'=='Amazon'</arg>
+<arg>Click On First Element Of FK</arg>
+</arguments>
+<status status="PASS" starttime="20240726 20:30:53.406" endtime="20240726 20:30:53.406"></status>
+</kw>
+<kw name="Run Keyword If" library="BuiltIn">
+<doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
+<arguments>
+<arg>'${Higher_Priced_Product}'=='Amazon'</arg>
+<arg>Switch Windows Option</arg>
+<arg>1</arg>
+</arguments>
+<status status="PASS" starttime="20240726 20:30:53.406" endtime="20240726 20:30:53.406"></status>
+</kw>
+<kw name="Run Keyword If" library="BuiltIn">
+<doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
+<arguments>
+<arg>'${Higher_Priced_Product}'=='Amazon'</arg>
+<arg>Buy FK Selected Product</arg>
+</arguments>
+<status status="PASS" starttime="20240726 20:30:53.406" endtime="20240726 20:30:53.406"></status>
+</kw>
+<kw name="Run Keyword If" library="BuiltIn">
+<doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
+<arguments>
+<arg>'${Higher_Priced_Product}'=='Flipkart'</arg>
+<arg>Open Browser To LoginPage</arg>
+<arg>${Amazon_URL}</arg>
+</arguments>
+<kw name="Open Browser To LoginPage" library="Login_Page">
+<arguments>
+<arg>${Amazon_URL}</arg>
+</arguments>
+<kw name="Open Browser" library="SeleniumLibrary">
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<arguments>
+<arg>${WEBSITE_URL}</arg>
+<arg>${BROWSER}</arg>
+</arguments>
+<msg timestamp="20240726 20:30:53.406" level="INFO">Opening browser 'chrome' to base url 'https://www.amazon.in/'.</msg>
+<status status="PASS" starttime="20240726 20:30:53.406" endtime="20240726 20:31:05.598"></status>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20240726 20:31:05.599" endtime="20240726 20:31:05.809"></status>
+</kw>
+<status status="PASS" starttime="20240726 20:30:53.406" endtime="20240726 20:31:05.809"></status>
+</kw>
+<status status="PASS" starttime="20240726 20:30:53.406" endtime="20240726 20:31:05.809"></status>
+</kw>
+<kw name="Run Keyword If" library="BuiltIn">
+<doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
+<arguments>
+<arg>'${Higher_Priced_Product}'=='Flipkart'</arg>
+<arg>Wait And Input Text</arg>
+<arg>${AMAZON_SEARCH_LOC}</arg>
+<arg>${Choice_Of_Product}</arg>
+</arguments>
+<kw name="Wait And Input Text" library="CommonFunctions">
+<doc>Waits for given locator for default time and then Type value in it.</doc>
+<arguments>
+<arg>${AMAZON_SEARCH_LOC}</arg>
+<arg>${Choice_Of_Product}</arg>
+</arguments>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<doc>Waits until the element ``locator`` is visible.</doc>
+<arguments>
+<arg>${locator}</arg>
+</arguments>
+<status status="PASS" starttime="20240726 20:31:05.810" endtime="20240726 20:31:05.908"></status>
+</kw>
+<kw name="Clear Element Text" library="SeleniumLibrary">
+<doc>Clears the value of the text-input-element identified by ``locator``.</doc>
+<arguments>
+<arg>${Locator}</arg>
+</arguments>
+<status status="PASS" starttime="20240726 20:31:05.908" endtime="20240726 20:31:06.068"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>${locator}</arg>
+<arg>${Text to input}</arg>
+</arguments>
+<msg timestamp="20240726 20:31:06.069" level="INFO">Typing text 'TITAN' into text field 'twotabsearchtextbox'.</msg>
+<status status="PASS" starttime="20240726 20:31:06.069" endtime="20240726 20:31:06.226"></status>
+</kw>
+<status status="PASS" starttime="20240726 20:31:05.810" endtime="20240726 20:31:06.227"></status>
+</kw>
+<status status="PASS" starttime="20240726 20:31:05.810" endtime="20240726 20:31:06.227"></status>
+</kw>
+<kw name="Run Keyword If" library="BuiltIn">
+<doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
+<arguments>
+<arg>'${Higher_Priced_Product}'=='Flipkart'</arg>
+<arg>Wait And Click</arg>
+<arg>${AMAZON_CLICK_SEARCH_ICON_LOC}</arg>
+</arguments>
+<kw name="Wait And Click" library="CommonFunctions">
+<doc>Waits for given locator for default time and then click it.</doc>
+<arguments>
+<arg>${AMAZON_CLICK_SEARCH_ICON_LOC}</arg>
+</arguments>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<doc>Waits until the element ``locator`` is visible.</doc>
+<arguments>
+<arg>${locator}</arg>
+</arguments>
+<status status="PASS" starttime="20240726 20:31:06.228" endtime="20240726 20:31:06.255"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>${locator}</arg>
+</arguments>
+<msg timestamp="20240726 20:31:06.256" level="INFO">Clicking element 'nav-search-submit-button'.</msg>
+<status status="PASS" starttime="20240726 20:31:06.255" endtime="20240726 20:31:09.485"></status>
+</kw>
+<status status="PASS" starttime="20240726 20:31:06.228" endtime="20240726 20:31:09.486"></status>
+</kw>
+<status status="PASS" starttime="20240726 20:31:06.227" endtime="20240726 20:31:09.486"></status>
+</kw>
+<kw name="Run Keyword If" library="BuiltIn">
+<doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
+<arguments>
+<arg>'${Higher_Priced_Product}'=='Flipkart'</arg>
+<arg>Wait And Click</arg>
+<arg>${FIRST_PRODUCT_LOC}</arg>
+</arguments>
+<kw name="Wait And Click" library="CommonFunctions">
+<doc>Waits for given locator for default time and then click it.</doc>
+<arguments>
+<arg>${FIRST_PRODUCT_LOC}</arg>
+</arguments>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<doc>Waits until the element ``locator`` is visible.</doc>
+<arguments>
+<arg>${locator}</arg>
+</arguments>
+<status status="PASS" starttime="20240726 20:31:09.488" endtime="20240726 20:31:09.534"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>${locator}</arg>
+</arguments>
+<msg timestamp="20240726 20:31:09.534" level="INFO">Clicking element '//*[@id="search"]/div[1]/div[1]/div/span[1]/div[1]/div[3]/div/div/div/div/span/div/div/div[1]/div/span/a/div/img'.</msg>
+<status status="PASS" starttime="20240726 20:31:09.534" endtime="20240726 20:31:09.751"></status>
+</kw>
+<status status="PASS" starttime="20240726 20:31:09.487" endtime="20240726 20:31:09.751"></status>
+</kw>
+<status status="PASS" starttime="20240726 20:31:09.486" endtime="20240726 20:31:09.752"></status>
+</kw>
+<kw name="Run Keyword If" library="BuiltIn">
+<doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
+<arguments>
+<arg>'${Higher_Priced_Product}'=='Flipkart'</arg>
+<arg>Switch Windows Option</arg>
+<arg>1</arg>
+</arguments>
+<kw name="Switch Windows Option" library="CommonFunctions">
+<arguments>
+<arg>1</arg>
+</arguments>
+<kw name="Get Window Handles" library="SeleniumLibrary">
+<doc>Returns all child window handles of the selected browser as a list.</doc>
+<assign>
+<var>${WindowList}</var>
+</assign>
+<msg timestamp="20240726 20:31:09.756" level="INFO">${WindowList} = ['CDwindow-F54C10EA97BE447FD30911B545982353', 'CDwindow-B978E8A3BC7791C1D66BF7AB9924DD47']</msg>
+<status status="PASS" starttime="20240726 20:31:09.753" endtime="20240726 20:31:09.756"></status>
+</kw>
+<kw name="Switch Window" library="SeleniumLibrary">
+<doc>Switches to browser window matching ``locator``.</doc>
+<arguments>
+<arg>${WindowList[${WindowCount}]}</arg>
+</arguments>
+<status status="PASS" starttime="20240726 20:31:09.757" endtime="20240726 20:31:10.001"></status>
+</kw>
+<kw name="Get Title" library="SeleniumLibrary">
+<doc>Returns the title of the current page.</doc>
+<assign>
+<var>${title}</var>
+</assign>
+<msg timestamp="20240726 20:31:14.954" level="INFO">${title} = Titan Leather Analog Green Dial Men's Watch-1874Nl01, Band Color-Black : Amazon.in: Watches</msg>
+<status status="PASS" starttime="20240726 20:31:10.002" endtime="20240726 20:31:14.954"></status>
+</kw>
+<kw name="Log" library="BuiltIn">
+<doc>Logs the given message with the given level.</doc>
+<arguments>
+<arg>Title in New Tab: ${title}</arg>
+</arguments>
+<msg timestamp="20240726 20:31:14.956" level="INFO">Title in New Tab: Titan Leather Analog Green Dial Men's Watch-1874Nl01, Band Color-Black : Amazon.in: Watches</msg>
+<status status="PASS" starttime="20240726 20:31:14.955" endtime="20240726 20:31:14.956"></status>
+</kw>
+<status status="PASS" starttime="20240726 20:31:09.752" endtime="20240726 20:31:14.956"></status>
+</kw>
+<status status="PASS" starttime="20240726 20:31:09.752" endtime="20240726 20:31:14.956"></status>
+</kw>
+<kw name="Run Keyword If" library="BuiltIn">
+<doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
+<arguments>
+<arg>'${Higher_Priced_Product}'=='Flipkart'</arg>
+<arg>Buy Amazon Selected Product</arg>
+</arguments>
+<kw name="Buy Amazon Selected Product" library="Amazon_Selected_Product_Info_Page">
+<kw name="Wait And Click" library="CommonFunctions">
+<doc>Waits for given locator for default time and then click it.</doc>
+<arguments>
+<arg>${BUY_BTN_AMAZON_LOC}</arg>
+</arguments>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<doc>Waits until the element ``locator`` is visible.</doc>
+<arguments>
+<arg>${locator}</arg>
+</arguments>
+<status status="PASS" starttime="20240726 20:31:14.958" endtime="20240726 20:31:14.999"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>${locator}</arg>
+</arguments>
+<msg timestamp="20240726 20:31:15.000" level="INFO">Clicking element '//input[@id='buy-now-button']'.</msg>
+<status status="PASS" starttime="20240726 20:31:15.000" endtime="20240726 20:31:17.601"></status>
+</kw>
+<status status="PASS" starttime="20240726 20:31:14.957" endtime="20240726 20:31:17.601"></status>
+</kw>
+<status status="PASS" starttime="20240726 20:31:14.957" endtime="20240726 20:31:17.602"></status>
+</kw>
+<status status="PASS" starttime="20240726 20:31:14.956" endtime="20240726 20:31:17.602"></status>
+</kw>
+<tags>
+<tag>Regression</tag>
+<tag>Smoke</tag>
+</tags>
+<status status="PASS" starttime="20240726 20:30:21.289" endtime="20240726 20:31:17.602" critical="yes"></status>
+</test>
+<kw name="Close Session" library="Login_Page" type="teardown">
+<kw name="Run Keyword And Ignore Error" library="BuiltIn">
+<doc>Runs the given keyword with the given arguments and ignores possible error.</doc>
+<arguments>
+<arg>Delete All Cookies</arg>
+</arguments>
+<kw name="Delete All Cookies" library="SeleniumLibrary">
+<doc>Deletes all cookies.</doc>
+<status status="PASS" starttime="20240726 20:31:17.604" endtime="20240726 20:31:17.638"></status>
+</kw>
+<status status="PASS" starttime="20240726 20:31:17.603" endtime="20240726 20:31:17.638"></status>
+</kw>
+<kw name="Close All Browsers" library="SeleniumLibrary">
+<doc>Closes all open browsers and resets the browser cache.</doc>
+<status status="PASS" starttime="20240726 20:31:17.639" endtime="20240726 20:31:19.968"></status>
+</kw>
+<status status="PASS" starttime="20240726 20:31:17.603" endtime="20240726 20:31:19.968"></status>
+</kw>
+<doc>Validate Pricing Of Amazon And Flipkart For Titan Watch
+TicketID-01 Shubhada</doc>
+<status status="PASS" starttime="20240726 20:30:01.467" endtime="20240726 20:31:19.968"></status>
+</suite>
+<status status="PASS" starttime="20240726 20:30:01.467" endtime="20240726 20:31:19.968"></status>
+</suite>
+<status status="PASS" starttime="20240726 20:30:01.451" endtime="20240726 20:31:19.968"></status>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0">Critical Tests</stat>
+<stat pass="1" fail="0">All Tests</stat>
+</total>
+<tag>
+<stat pass="1" fail="0">Regression</stat>
+<stat pass="1" fail="0">Smoke</stat>
+</tag>
+<suite>
+<stat pass="1" fail="0" id="s1" name="Amazon-Flipkart-Automation">Amazon-Flipkart-Automation</stat>
+<stat pass="1" fail="0" id="s1-s1" name="TestSuites">Amazon-Flipkart-Automation.TestSuites</stat>
+<stat pass="1" fail="0" id="s1-s1-s1" name="Validate Pricing Of Amazon And Flipkart For Titan Watch">Amazon-Flipkart-Automation.TestSuites.Validate Pricing Of Amazon And Flipkart For Titan Watch</stat>
+</suite>
+</statistics>
+<errors>
+<msg timestamp="20240726 20:30:02.356" level="ERROR">Error in file 'E:\Prac\eclipse-workspace\Amazon-Flipkart-Automation\CommonResources\Global_Resources.robot': Importing test library 'ExcelLibrary' failed: ModuleNotFoundError: No module named 'ExcelLibrary'
+Traceback (most recent call last):
+  None
+PYTHONPATH:
+  C:\Users\shubhadac\AppData\Local\Programs\Python\Python38\Lib\site-packages
+  E:\Prac\eclipse-workspace\Amazon-Flipkart-Automation
+  C:\Users\shubhadac\AppData\Local\Programs\Python\Python38\python38.zip
+  C:\Users\shubhadac\AppData\Local\Programs\Python\Python38\DLLs
+  C:\Users\shubhadac\AppData\Local\Programs\Python\Python38\lib
+  C:\Users\shubhadac\AppData\Local\Programs\Python\Python38
+  C:\Users\shubhadac\AppData\Local\Programs\Python\Python38\lib\site-packages
+  C:\Users\shubhadac\AppData\Local\Programs\Python\Python38\lib\site-packages\win32
+  C:\Users\shubhadac\AppData\Local\Programs\Python\Python38\lib\site-packages\win32\lib
+  C:\Users\shubhadac\AppData\Local\Programs\Python\Python38\lib\site-packages\Pythonwin</msg>
+<msg timestamp="20240726 20:30:04.893" level="ERROR">Error in file 'E:\Prac\eclipse-workspace\Amazon-Flipkart-Automation\CommonResources\Global_Resources.robot': Importing test library 'HTTPLibrary' failed: ModuleNotFoundError: No module named 'HTTPLibrary'
+Traceback (most recent call last):
+  None
+PYTHONPATH:
+  C:\Users\shubhadac\AppData\Local\Programs\Python\Python38\Lib\site-packages
+  E:\Prac\eclipse-workspace\Amazon-Flipkart-Automation
+  C:\Users\shubhadac\AppData\Local\Programs\Python\Python38\python38.zip
+  C:\Users\shubhadac\AppData\Local\Programs\Python\Python38\DLLs
+  C:\Users\shubhadac\AppData\Local\Programs\Python\Python38\lib
+  C:\Users\shubhadac\AppData\Local\Programs\Python\Python38
+  C:\Users\shubhadac\AppData\Local\Programs\Python\Python38\lib\site-packages
+  C:\Users\shubhadac\AppData\Local\Programs\Python\Python38\lib\site-packages\win32
+  C:\Users\shubhadac\AppData\Local\Programs\Python\Python38\lib\site-packages\win32\lib
+  C:\Users\shubhadac\AppData\Local\Programs\Python\Python38\lib\site-packages\Pythonwin</msg>
+<msg timestamp="20240726 20:30:04.897" level="ERROR">Error in file 'E:\Prac\eclipse-workspace\Amazon-Flipkart-Automation\CommonResources\Global_Resources.robot': Importing test library 'RPA.Excel.Files' failed: ModuleNotFoundError: No module named 'RPA'
+Traceback (most recent call last):
+  None
+PYTHONPATH:
+  C:\Users\shubhadac\AppData\Local\Programs\Python\Python38\Lib\site-packages
+  E:\Prac\eclipse-workspace\Amazon-Flipkart-Automation
+  C:\Users\shubhadac\AppData\Local\Programs\Python\Python38\python38.zip
+  C:\Users\shubhadac\AppData\Local\Programs\Python\Python38\DLLs
+  C:\Users\shubhadac\AppData\Local\Programs\Python\Python38\lib
+  C:\Users\shubhadac\AppData\Local\Programs\Python\Python38
+  C:\Users\shubhadac\AppData\Local\Programs\Python\Python38\lib\site-packages
+  C:\Users\shubhadac\AppData\Local\Programs\Python\Python38\lib\site-packages\win32
+  C:\Users\shubhadac\AppData\Local\Programs\Python\Python38\lib\site-packages\win32\lib
+  C:\Users\shubhadac\AppData\Local\Programs\Python\Python38\lib\site-packages\Pythonwin</msg>
+</errors>
+</robot>
